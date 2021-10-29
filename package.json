@@ -1,0 +1,17 @@
+{
+  "name": "exit-exam",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test-with-json": "SKIP_PREFLIGHT_CHECK=true CI=true jest --outputFile=./test/score.json --json; node test/calculateScore.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/plugin-transform-react-jsx": "^7.10.4",
+    "jest": "^26.2.2"
+  }
+}
